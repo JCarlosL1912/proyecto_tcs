@@ -15,6 +15,10 @@ module.exports = class Conexion{
         });
     }
 
+    stopConexion() {
+        this.conexion.end();
+    }
+
     getConexion() {
         return this.conexion;
     }
